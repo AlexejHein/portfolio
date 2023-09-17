@@ -1,0 +1,87 @@
+.portfolioContaione{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .portfolioHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        h2{
+            font-size: 3rem;
+            font-weight: 700;
+            margin-right: 220px;
+        }
+        .hr{
+            width: 100px;
+            height: 3px;
+            background-color: #9747FF;
+            margin-right: 50px;
+        }
+        .hrLong{
+            width: 500px;
+            height: 3px;
+            background-color: #9747FF;
+            margin-right: 0;
+        }
+    }
+}
+.portfolioItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    h3{
+        color: #9747FF;
+    }
+    .phaeder{
+        color: #70E61C;
+    }
+    .portfolioItemContent{
+        width: 40%;
+    }
+    .buttons{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        button{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: #9747FF;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #70E61C;
+            }
+        }
+        .gitbtn{
+            border: 2px solid #70E61C;
+            background-color: transparent;
+            &:hover{
+                background-color: #9747FF;
+                border: none;
+            }
+        }
+    }
+}
+.pleft{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align: right;
+}
