@@ -1,0 +1,33 @@
+.skillsContainer{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .skills{
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .skillsDescription{
+        text-align: center;
+        h2{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        button{
+            width: 120px;
+            background-color: #70E61C;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
