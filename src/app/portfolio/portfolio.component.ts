@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
 
+  goToLink(event: Event, url: string): void {
+    event.preventDefault();
+    window.open(url, '_blank');
+  }
+
 }

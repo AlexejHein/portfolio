@@ -1,4 +1,4 @@
-<div class="portfolioContaione">
+<div class="portfolioContaione" id="portfolio">
     <div class="portfolioHeader">
         <div class="hr"></div>
         <h2>Portfolio</h2>
@@ -15,8 +15,8 @@
                 Create and organize tasks using drag and drop 
                 functions, assign users and categories. </p>
                 <div class="buttons">
-                    <button>Live test</button>
-                    <button class="gitbtn">Github</button>
+                    <button (click)="goToLink($event, 'https://alexej-hein.developerakademie.net/join/index.html')">Live test</button>
+                    <button (click)="goToLink($event, 'https://github.com/AlexejHein/join')" class="gitbtn">Github</button>
                 </div>
             </div>
         
@@ -29,7 +29,7 @@
                     Help Pepe to find coins and tabasco salsa to 
                     fight against the crazy hen.</p>
                 <div class="buttons">
-                    <button>Live test</button>
+                    <button (click)="goToLink($event, 'https://alexej-hein.developerakademie.net/ElPolloLoco')">Live test</button>
                     <button class="gitbtn">Github</button>
                 </div>
             </div>

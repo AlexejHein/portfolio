@@ -17,6 +17,13 @@ nav{
     a{
         text-decoration: none;
         color: #fff;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            color: #70E61C;
+            border-bottom: 2px solid #9747FF;
+            transition: all 0.2s ease-in-out;
+        }
     }
 }
 
