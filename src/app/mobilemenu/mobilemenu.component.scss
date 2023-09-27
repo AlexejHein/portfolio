@@ -1,0 +1,82 @@
+.menu-container {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-right: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+    .hamburger-icon {
+        cursor: pointer;
+        position: relative;
+        height: 30px;
+        width: 30px;
+        
+        span {
+            background: #fff;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        span:nth-child(1) {
+            top: 0;
+        }
+        
+        span:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        span:nth-child(3) {
+            bottom: 0;
+        }
+    }
+    
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: rgba(0,0,0,0.6);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        display: none; // Versteckt standardmäßig das Menü
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+        a {
+            font-size: 30px;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    
+    &.open .menu {
+        display: flex !important; // Zeigt das Menü an, wenn die Klasse .open hinzugefügt wird
+    }
+    
+    &.open .hamburger-icon {
+        span:nth-child(1) {
+            transform: translateY(14px) rotate(45deg) !important;
+        }
+        
+        span:nth-child(2) {
+            opacity: 0 !important;
+        }
+        
+        span:nth-child(3) {
+            transform: translateY(-14px) rotate(-45deg) !important;
+        }
+    }
+}

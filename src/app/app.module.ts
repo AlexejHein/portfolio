@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { MobilemenuComponent } from './mobilemenu/mobilemenu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     FooterComponent,
     HeaderComponent,
     SkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    MobilemenuComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    z-index: 1000;
     .logo{
         font-size: 30px;
         font-weight: bold;
@@ -20,7 +21,23 @@ nav{
         display: flex;
         margin-right: 80px;
         gap: 30px;
-    };
+    }
+    // Für Bildschirme größer als 600px
+@media(min-width: 601px) {
+    .mobilemenu {
+      display: none;
+    }
+  }
+  
+  // Für Bildschirme bis zu 600px
+  @media(max-width: 600px) {
+    .menu {
+      display: none;
+    }
+    .mobilemenu {
+      display: block;
+    }
+  }
     a{
         position: relative;
         text-decoration: none;
@@ -45,6 +62,12 @@ nav{
             }
         }
 
+    }
+}
+
+@media(min-width: 768px){
+    .menu{
+        display: none;
     }
 }
 
