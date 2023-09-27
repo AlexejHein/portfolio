@@ -1,4 +1,5 @@
 .portfolioContaione{
+    
     margin-top: 100px;
     width: 100%;
     text-align: center;
@@ -6,6 +7,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .imgShape{
+        position: relative;
+
+        img{
+            position: absolute;
+            top: -400px;
+            left: -1300px;
+            z-index: -1;
+        }
+        .shapeBottem{
+            position: absolute;
+            left: 300px;
+            z-index: -1;
+        }
+    }
+    
     .portfolioHeader{
         width: 100%;
         display: flex;
@@ -13,7 +30,7 @@
         justify-content: flex-end;
         align-items: center;
         h2{
-            font-size: 3rem;
+            font-size: 5rem;
             font-weight: 700;
             margin-right: 220px;
         }

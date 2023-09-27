@@ -1,4 +1,10 @@
 nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #141D2F;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,18 +18,33 @@ nav{
     }
     .menu{
         display: flex;
+        margin-right: 80px;
         gap: 30px;
     };
     a{
+        position: relative;
         text-decoration: none;
         color: #fff;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
+        .border{
+            width: 0;
+            height: 0;
+        }
+        
         &:hover{
             color: #70E61C;
-            border-bottom: 2px solid #9747FF;
             transition: all 0.2s ease-in-out;
+            .border{
+                position: absolute;
+                margin-top: 5px;
+                width: 45px;
+                height: 3px;
+                background-color: #9747FF;
+                transition: all 0.4s ease-in-out;
+            }
         }
+
     }
 }
 

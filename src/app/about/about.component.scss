@@ -1,4 +1,5 @@
 .aboutContant{
+    position: relative;
     margin-top: -400px;
     display: flex;
     justify-content: space-around;
@@ -6,11 +7,16 @@
     .aboutDecription{
         width: 40%;
         h2{
-            font-size: 2.5rem;
+            font-size: 5rem;
             font-weight: 600;
             color: #fff;
             margin-bottom: 20px;
         }
+    }
+    .abootImg{
+        position: absolute;
+        right: -400px;
+        z-index: -1;
     }
     .aboutInfo{
         display: flex;
@@ -26,6 +32,7 @@
         justify-content: center;
         align-items: center;
         .aboutImg{
+            background-color: #141D2F;
             width: 300px;
             height: 300px;
             border-radius: 50%;
@@ -34,7 +41,7 @@
             background-image: url('../../assets/img/selfHead.png');
             background-repeat: no-repeat;
             background-position: center;
-
+            object-fit: contain;
         }
         .aboutImgIcon{
             width: 400px;

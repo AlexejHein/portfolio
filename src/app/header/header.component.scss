@@ -9,12 +9,15 @@
     gap: 120px;
     z-index: 10;
     .bild{
+        position: relative;
         margin-right: 20px;
         margin-left: 30px;
         margin-top: 130px;
         z-index: -20;
-        img{
-            filter: drop-shadow(14px 14px 14px rgba(0, 0, 0, 0.55));
+        .shapeImg{
+            position: absolute;
+            z-index: -1;
+            left: -180px;
         }
     }
     .my{
@@ -30,6 +33,7 @@
         margin: 0;
         margin-block-end: 51px;
         margin-right: -20px;
+        z-index: -1;
     }
     .heading{
         display: flex;
@@ -70,15 +74,16 @@
 }
 .shape{
     position: relative;
-    width: 100vw;
+    width: 100%;
     margin-top: -180px;
     z-index: -10!important;
-    img{
-        width: 100%;
+    .imgShape{
+        width: 100vw;
+        object-fit: cover;
     }
     .headerFooter{
         position: absolute;
-        bottom: 530px;
+        bottom: 600px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -88,6 +93,13 @@
             width: 100px;
             height: 3px;
             background-color: #9747FF;
+        }
+        .iconheader{
+            width: 30px;
+            cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                }
         }
     }
 }

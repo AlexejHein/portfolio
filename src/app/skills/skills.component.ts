@@ -18,4 +18,5 @@ export class SkillsComponent {
           '../../assets/img/iconsSkills/Scrum.svg',
           '../../assets/img/iconsSkills/Automation.svg',
   ];
+  deskription = ['Angular', 'CSS', 'HTML', 'Firebase', 'JavaScript', 'TypeScript', 'Git', 'API', 'WordPress', 'Scrum', 'Material Design'];
 }

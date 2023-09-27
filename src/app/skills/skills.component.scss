@@ -20,11 +20,21 @@
             }
         }
     }
+    .iconSkills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
 
     .skillsDescription{
         text-align: center;
         h2{
-            font-size: 3rem;
+            font-size: 5rem;
             font-weight: 600;
         }
         button{
