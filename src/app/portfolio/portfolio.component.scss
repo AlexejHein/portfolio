@@ -1,5 +1,4 @@
 .portfolioContaione{
-    
     margin-top: 100px;
     width: 100%;
     text-align: center;
@@ -9,7 +8,6 @@
     align-items: center;
     .imgShape{
         position: relative;
-
         img{
             position: absolute;
             top: -400px;
@@ -22,7 +20,6 @@
             z-index: -1;
         }
     }
-    
     .portfolioHeader{
         width: 100%;
         display: flex;
