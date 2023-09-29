@@ -1,9 +1,13 @@
 .skillsContainer{
-    margin-top: 200px;
+    margin-top: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width: 1368px){
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
     .skills{
         width: 30%;
         height: auto;
@@ -12,6 +16,10 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 60px;
+        @media (max-width: 1268px){
+            width: 80%;
+            justify-content: center;
+        }
         img{
             transition: all 0.4s ease-in-out;
             &:hover{
@@ -36,6 +44,14 @@
         h2{
             font-size: 5rem;
             font-weight: 600;
+        }
+        @media (max-width: 1368px){
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                padding: 10px;
+            }
         }
         button{
             width: 120px;

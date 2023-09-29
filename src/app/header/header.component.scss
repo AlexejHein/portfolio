@@ -21,19 +21,20 @@
         }
     }
     .my{
+        width: 730px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
     }
     span{
-        font-size: 3.5rem;
+        font-size: 5rem;
         font-weight: 300;
         transform: rotate(-90deg);
-        margin: 0;
-        margin-block-end: 51px;
+        margin: auto;
         margin-right: -20px;
         z-index: -1;
+        margin-bottom: 90px;
     }
     .heading{
         display: flex;
@@ -44,18 +45,17 @@
     h1{
         font-size: 6rem;
         font-weight: 600;
-        line-height: 15px;
+        // line-height: 15px;
         letter-spacing: 5px;
-        margin: 35px;
+
         margin-left: 0;
-        margin-bottom: 45px;
+        margin-bottom: 10px;
     }
     h3{
         font-size: 3rem;
         font-weight: 600;
         color: #9747FF;
         margin: 0;
-        margin-left: -20px;
     }
     button{
         width: 120px;
@@ -97,11 +97,13 @@
         }
         .iconheader{
             width: 30px;
-            cursor: pointer;
+            cursor: pointer!important;
                 &:hover{
                     transform: scale(1.2);
                 }
         }
     }
 }
+
+
 
