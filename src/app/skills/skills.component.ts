@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
+  constructor(private scrollService: ScrollService) { }
+
+  scrollToContact() {
+    this.scrollService.scrollToElement('contact');
+  }
+
   icons= ['../../assets/img/iconsSkills/Angular.svg', 
           '../../assets/img/iconsSkills/css.svg', 
           '../../assets/img/iconsSkills/html.svg', 

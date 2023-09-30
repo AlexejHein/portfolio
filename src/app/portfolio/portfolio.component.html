@@ -9,35 +9,34 @@
     </div>
     <p>This page is a sample of my work - please feel free to try them out.</p>
     <div class="portfolio">
-        <div class="portfolioItem">
-            <img src="../../assets/img/join.png">
-            <div class="portfolioItemContent">
-                <h3>Join</h3>
-                <p class="phaeder">JavaScript | HTML | CSS</p>
-                <p>Task manager inspired by the Kanban System. 
-                Create and organize tasks using drag and drop 
-                functions, assign users and categories. </p>
-                <div class="buttons">
-                    <button (click)="goToLink($event, 'https://alexej-hein.developerakademie.net/join/index.html')">Live test</button>
-                    <button (click)="goToLink($event, 'https://github.com/AlexejHein/join')" class="gitbtn">Github</button>
-                </div>
+        <div *ngFor="let item of portfolioItems; let i = index" class="portfolioItem">
+            <ng-container *ngIf="i % 2 === 0; else reverseOrder">
+              <img [src]="item.imageUrl">
+              <div class="portfolioItemContent">
+                <ng-container *ngTemplateOutlet="portfolioContent; context: { $implicit: item }"></ng-container>
+              </div>
+            </ng-container>
+            <ng-template #reverseOrder>
+              <div class="portfolioItemContent">
+                <ng-container *ngTemplateOutlet="portfolioContent; context: { $implicit: item }"></ng-container>
+              </div>
+              <img [src]="item.imageUrl">
+            </ng-template>
+          </div>
+          
+          <ng-template #portfolioContent let-item>
+            <h3>{{ item.title }}</h3>
+            <p class="phaeder">{{ item.technologies }}</p>
+            <p>{{ item.description }}</p>
+            <div class="buttons">
+              <button *ngFor="let link of item.links" 
+                      [class]="link.class" 
+                      (click)="goToLink($event, link.url)">
+                {{ link.label }}
+              </button>
             </div>
-        
-        </div>
-        <div class="portfolioItem">
-            <div class="portfolioItemContent pleft">
-                <h3>Pollo Loco</h3>
-                <p class="phaeder">JavaScript | HTML | CSS</p>
-                <p> Jump, run and throw game based on object-oriented approach. 
-                    Help Pepe to find coins and tabasco salsa to 
-                    fight against the crazy hen.</p>
-                <div class="buttons">
-                    <button (click)="goToLink($event, 'https://alexej-hein.developerakademie.net/ElPolloLoco')">Live test</button>
-                    <button (click)="goToLink($event, 'https://github.com/AlexejHein/ElPolloLoco')" class="gitbtn">Github</button>
-                </div>
-            </div>
-            <img src="../../assets/img/PolloLoco.png">
-        </div>
+          </ng-template>
+          
     </div>
     <!-- <div class="imgShape">
         <img class="shapeBottem" src="../../assets/img/shaps/Green shadow 3 (skills and portfolio section).png" alt="">

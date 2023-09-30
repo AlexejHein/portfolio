@@ -2,10 +2,11 @@
     position: relative;
     margin-top: -400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     .aboutDecription{
         width: 40%;
+        margin: 100px;
         h2{
             font-size: 5rem;
             font-weight: 600;
