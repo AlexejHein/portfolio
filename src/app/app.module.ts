@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MobilemenuComponent } from './mobilemenu/mobilemenu.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -23,10 +24,11 @@ import { MobilemenuComponent } from './mobilemenu/mobilemenu.component';
     PortfolioComponent,
     MobilemenuComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
