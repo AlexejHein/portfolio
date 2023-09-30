@@ -1,6 +1,4 @@
 .aboutContant{
-    position: relative;
-    margin-top: -400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,11 +11,6 @@
             color: #fff;
             margin-bottom: 20px;
         }
-    }
-    .abootImg{
-        position: absolute;
-        right: -400px;
-        z-index: -1;
     }
     .aboutInfo{
         display: flex;
