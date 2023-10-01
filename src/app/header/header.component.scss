@@ -4,39 +4,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 800px){
-        flex-direction: column;
-    }
+    gap: 200px;
+  @media (max-width: 768px){
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media (max-width: 400px){
+    gap: 1px;
+  }
     .bild{
         position: relative;
-        margin-right: 20px;
-        margin-left: 30px;
         margin-top: 130px;
         z-index: -2;
-        @media (max-width: 1200px){
-            margin-top: 100px;
-          .shapeImg{
-            width:400px;
-          }
-          .self{
-            width: 400px;
-          }
-        }
-        @media (max-width: 1000px){
-            width: 300px;
-            .self{
-                width: 300px;
-            }
-        }
-        @media (max-width: 800px){
-            width: 200px;
-        }
         .shapeImg{
             position: absolute;
             z-index: -1;
-            left: -180px;
+            left: -170px;
         }
-
+      @media (max-width: 768px){
+        img{
+            width: 80%;
+        }
+        .shapeImg{
+            width: 100%;
+            left: 0;
+        }
+      }
     }
     .my{
         display: flex;
@@ -49,12 +42,7 @@
         font-weight: 300;
         transform: rotate(-90deg);
         margin-top: -5px;
-      @media (max-width: 378px){
-        font-size: 30px;
-        margin-top: 0;
-      }
     }
-
     .heading{
         display: flex;
         flex-direction: column;
@@ -67,18 +55,24 @@
         letter-spacing: 5px;
         margin-left: 0;
         margin-bottom: 10px;
-      @media (max-width: 378px) {
-        font-size: 30px;
-      }
     }
     h3{
         font-size: 30px;
         font-weight: 600;
         color: #9747FF;
         margin: 0;
-      @media (max-width: 378px) {
-        font-size: 20px;
-      }
+    }
+    @media (max-width: 400px){
+        span{
+            font-size: 20px;
+            margin-top: -20px;
+        }
+        h1{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 15px;
+        }
     }
     button{
         width: 120px;
@@ -115,25 +109,34 @@
                     transform: scale(1.2);
                 }
         }
-      .email{
-        @media (max-width: 378px){
-          display: none;
-        }
-      }
     }
+  @media (max-width: 400px){
+    .headerFooter{
+        gap: 10px;
+        margin-top: 30px;
+        .iconheader{
+            width: 20px;
+        }
+    }
+    .email{
+        display: none;
+    }
+  }
 }
 .imgShape{
     position: absolute;
     width: 100vw;
     top: 300px;
     z-index: -1;
-   @media (max-width: 1100px){
-    top: 400px;
-   }
-    @media (max-width: 370px){
-      top: 350px;
-    }
+  @media (max-width: 768px){
+    top: 470px;
+  }
+  @media (max-width: 400px){
+    top: 360px;
+  }
 }
+
+
 
 
 

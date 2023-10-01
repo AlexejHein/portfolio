@@ -5,11 +5,21 @@
     .aboutDecription{
         width: 40%;
         margin: 100px;
+        @media (max-width: 1000px){
+            width: 90%;
+            margin: 0;
+        }
         h2{
             font-size: 5rem;
             font-weight: 600;
             color: #fff;
             margin-bottom: 20px;
+          @media (max-width: 1000px){
+            font-size: 3rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+          }
         }
     }
     .aboutInfo{
