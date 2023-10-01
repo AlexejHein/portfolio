@@ -1,0 +1,14 @@
+<div class="menu-container" [ngClass]="{'open': isOpen}" (click)="toggleMenu()">
+    <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu">
+        <a (click)="toggleMenu(); $event.stopPropagation()" href="#about">About Me</a>
+        <a (click)="toggleMenu(); $event.stopPropagation()" href="#skills">Skills</a>
+        <a (click)="toggleMenu(); $event.stopPropagation()" href="#portfolio">Portfolio</a>
+        <a (click)="toggleMenu(); $event.stopPropagation()" href="#contact">Contact</a>
+    </div>
+</div>
+

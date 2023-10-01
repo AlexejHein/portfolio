@@ -1,0 +1,13 @@
+<div class="skillsContainer" >
+<div class="skills" id="skills">
+    <div class="iconSkills" *ngFor="let icon of icons; let i = index">
+        <img [src]="icon" alt="Icon" width="50" height="50">
+        <p class="deskIcon">{{ deskription[i] }}</p>
+    </div>
+</div>
+<div class="skillsDescription">
+    <h2>My Skills</h2>
+    <p>I have gained experience in building projects with various front end technologies and concepts.</p>
+    <button (click)="scrollToContact()" >Get in touch</button>
+</div>
+</div>

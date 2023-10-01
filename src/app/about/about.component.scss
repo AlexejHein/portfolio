@@ -1,0 +1,59 @@
+.aboutContant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .aboutDecription{
+        width: 40%;
+        margin: 100px;
+        @media (max-width: 1300px){
+            width: 90%;
+            margin: 0 auto;
+        }
+        h2{
+            font-size: 5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+          @media (max-width: 1000px){
+            font-size: 3rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+          }
+        }
+    }
+    .aboutInfo{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        p{
+            width: 70%;
+        }
+    }
+    .aboutImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1300px){
+            display: none;
+        }
+        .aboutImg{
+            background-color: #141D2F;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #70E61C;
+            background-image: url('../../assets/img/selfHead.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: contain;
+        }
+        .aboutImgIcon{
+            width: 400px;
+            height: 3px;
+            background-color: #70E61C;
+        }
+    }
+}
