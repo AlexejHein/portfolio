@@ -2,8 +2,8 @@
     {
       "title": "Join",
       "technologies": "JavaScript | HTML | CSS",
-      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
-      "imageUrl": "../../assets/img/Join.png",
+      "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu. ",
+      "imageUrl": "../../assets/img/join.png",
       "links": [
         { "url": "https://alexej-hein.developerakademie.net/join/index.html", "label": "Live test" },
         { "url": "https://github.com/AlexejHein/join", "label": "Github", "class": "gitbtn" }
@@ -12,21 +12,31 @@
     {
       "title": "Pollo Loco",
       "technologies": "JavaScript | HTML | CSS",
-      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "description": "Jump and run spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen..",
       "imageUrl": "../../assets/img/PolloLoco.png",
       "links": [
         { "url": "https://alexej-hein.developerakademie.net/ElPolloLoco", "label": "Live test" },
         { "url": "https://github.com/AlexejHein/ElPolloLoco", "label": "Github", "class": "gitbtn" }
       ]
     },
-    {
-      "title": "Weather App",
-      "technologies": "JavaScript | HTML | CSS",
-      "description": "Weather app based on OpenWeatherMap API...",
-      "imageUrl": "../../assets/img/Join.png",
-      "links": [
-        { "url": "", "label": "Live test" },
-        { "url": "", "label": "Github", "class": "gitbtn" }
-      ]
-    }
+  {
+    "title": "E-Commerce",
+    "technologies": "WordPress | HTML | CSS | PHP",
+    "description": "Ein Online-Shop ermöglicht das bequeme Stöbern, Auswählen und Kaufen von Produkten oder Dienstleistungen von zu Hause aus, wobei die Artikel entweder geliefert oder als Download zur Verfügung gestellt werden",
+    "imageUrl": "../../assets/img/e-Comm.png",
+    "links": [
+      { "url": "https://equusamare.shop", "label": "Live test" },
+      { "url": "#", "label": "Github", "class": "gitbtn" }
+    ]
+  },
+  {
+    "title": "Foto Webseite",
+    "technologies": "Bootstrap | HTML | CSS | PHP",
+    "description": "Diese Foto-Webseite nutzt Bootstrap, HTML, CSS und PHP, um eine ansprechende und benutzerfreundliche Plattform für die Präsentation von Fotografien zu schaffen. Durch das responsive Design können Nutzer einfach durch Galerien browsen und mit den Inhalten interagieren, während PHP dynamische Webseitenfunktionen ermöglicht.",
+    "imageUrl": "../../assets/img/fotowebseite.png",
+    "links": [
+      { "url": "https://naturfotodesign.de/", "label": "Live test" },
+      { "url": "#", "label": "Github", "class": "gitbtn" }
+    ]
+  }
   ]

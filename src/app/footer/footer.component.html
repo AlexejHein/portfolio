@@ -1,7 +1,7 @@
 <footer>
     <div class="logo">
-        <h1>Ale<span>x</span>ej</h1>
-        <a href="#" class="imp">Impresumm</a>
+        <img src="../../assets/img/logoDevWeis.png">
+        <a class="imp" (click)="openImpressum()">Impressum</a>
     </div>
     <div class="copy">
         <p>© Alexej Hein 2023</p>
@@ -12,3 +12,5 @@
         <img src="../../assets/img/email.svg">
     </div>
 </footer>
+<app-impress *ngIf="showImpressum" (close)="closeImpressum()"></app-impress>
+

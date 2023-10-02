@@ -11,6 +11,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MobilemenuComponent } from './mobilemenu/mobilemenu.component';
 import {NgOptimizedImage} from "@angular/common";
+import { ImpressComponent } from './impress/impress.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {NgOptimizedImage} from "@angular/common";
     HeaderComponent,
     SkillsComponent,
     PortfolioComponent,
-    MobilemenuComponent
+    MobilemenuComponent,
+    ImpressComponent
   ],
     imports: [
         BrowserModule,

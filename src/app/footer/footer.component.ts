@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  showImpressum = false;
 
+  openImpressum() {
+    this.showImpressum = true;
+  }
+  closeImpressum() {
+    this.showImpressum = false;
+  }
 }
