@@ -7,13 +7,14 @@
         <h2>Portfolio</h2>
         <div class="hrLong"></div>
     </div>
-    <p [@slideIn]="animationState" *ngIf="true">Diese Seite ist ein Beispiel meiner Arbeiten – bitte zögern Sie nicht, sie auszuprobieren.</p>
+    <p>Diese Seite ist ein Beispiel meiner Arbeiten – bitte zögern Sie nicht, sie auszuprobieren.</p>
 
-    <div class="portfolio">
+    <div class="portfolio" >
+      <div  >
         <div *ngFor="let item of portfolioItems; let i = index" class="portfolioItem">
-            <ng-container *ngIf="i % 2 === 0; else reverseOrder" >
-              <img [src]="item.imageUrl" alt="portfolio">
-              <div class="portfolioItemContent">
+            <ng-container *ngIf="i % 2 === 0; else reverseOrder">
+              <img [@slideIn]="animationState" *ngIf="true" [src]="item.imageUrl" alt="portfolio">
+              <div class="portfolioItemContent" [@slideIn]="animationState" *ngIf="true">
                 <ng-container *ngTemplateOutlet="portfolioContent; context: { $implicit: item }"></ng-container>
               </div>
             </ng-container>
@@ -24,6 +25,7 @@
               <img [src]="item.imageUrl" alt="portfolio">
             </ng-template>
           </div>
+      </div>
 
           <ng-template #portfolioContent let-item>
             <h3>{{ item.title }}</h3>

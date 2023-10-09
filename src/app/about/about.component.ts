@@ -1,6 +1,5 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
 import {slideInAnimation} from "../animation";
-import { animationsscrollService } from '../animationsscroll.service';
 
 
 @Component({
@@ -12,14 +11,19 @@ import { animationsscrollService } from '../animationsscroll.service';
 export class AboutComponent {
   animationState: string = 'void';
 
-  constructor(private el: ElementRef, private scrollService: animationsscrollService) {
-    this.scrollService.scrollObservable.subscribe((newState: string) => {
-      this.animationState = newState;
-    });
-  }
+  constructor(private el: ElementRef) { }
+
   @HostListener('window:scroll', ['$event'])
-  onScroll() {
-    this.scrollService.checkScroll(this.el, this.animationState);
+  checkScroll() {
+    const componentPosition = this.el.nativeElement.offsetTop;
+    const componentHeight = this.el.nativeElement.offsetHeight;
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+    if (scrollPosition >= componentPosition && this.animationState === 'void') {
+      this.animationState = 'left';
+    }
+    if (scrollPosition < componentPosition || window.pageYOffset > (componentPosition + componentHeight)) {
+      this.animationState = 'void';
+    }
   }
 
 

@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, Input} from '@angular/core';
+import {Component, ElementRef, HostListener} from '@angular/core';
 import { ScrollService } from '../scroll.service';
 import {slideInAnimation} from "../animation";
 
@@ -18,13 +18,9 @@ export class SkillsComponent {
     const componentPosition = this.el.nativeElement.offsetTop;
     const componentHeight = this.el.nativeElement.offsetHeight;
     const scrollPosition = window.pageYOffset + window.innerHeight;
-
-    // Wenn das Element in den sichtbaren Bereich des Fensters scrollt
     if (scrollPosition >= componentPosition && this.animationState === 'void') {
-      this.animationState = 'right';  // Oder 'right', je nachdem, welche Animation Sie wollen
+      this.animationState = 'right';
     }
-
-    // Wenn das Element wieder aus dem sichtbaren Bereich des Fensters verschwindet
     if (scrollPosition < componentPosition || window.pageYOffset > (componentPosition + componentHeight)) {
       this.animationState = 'void';
     }
