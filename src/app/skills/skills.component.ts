@@ -21,7 +21,7 @@ export class SkillsComponent {
 
     // Wenn das Element in den sichtbaren Bereich des Fensters scrollt
     if (scrollPosition >= componentPosition && this.animationState === 'void') {
-      this.animationState = 'left';  // Oder 'right', je nachdem, welche Animation Sie wollen
+      this.animationState = 'right';  // Oder 'right', je nachdem, welche Animation Sie wollen
     }
 
     // Wenn das Element wieder aus dem sichtbaren Bereich des Fensters verschwindet

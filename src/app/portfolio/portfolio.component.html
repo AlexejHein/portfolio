@@ -1,16 +1,17 @@
-<div class="portfolioContaione" >
+<div class="portfolioContaione">
     <div class="imgShape">
         <img src="assets/img/shaps/Green shadow 3 (skills and portfolio section).png" alt="">
     </div>
-    <div class="portfolioHeader">
+    <div class="portfolioHeader" >
         <div class="hr"></div>
         <h2>Portfolio</h2>
         <div class="hrLong"></div>
     </div>
-    <p>Diese Seite ist ein Beispiel meiner Arbeiten – bitte zögern Sie nicht, sie auszuprobieren.</p>
+    <p [@slideIn]="animationState" *ngIf="true">Diese Seite ist ein Beispiel meiner Arbeiten – bitte zögern Sie nicht, sie auszuprobieren.</p>
+
     <div class="portfolio">
         <div *ngFor="let item of portfolioItems; let i = index" class="portfolioItem">
-            <ng-container *ngIf="i % 2 === 0; else reverseOrder">
+            <ng-container *ngIf="i % 2 === 0; else reverseOrder" >
               <img [src]="item.imageUrl" alt="portfolio">
               <div class="portfolioItemContent">
                 <ng-container *ngTemplateOutlet="portfolioContent; context: { $implicit: item }"></ng-container>
@@ -38,6 +39,7 @@
           </ng-template>
 
     </div>
+
     <div class="imgShape">
         <img class="shapeBottem" src="../../assets/img/shaps/Green shadow 3 (skills and portfolio section).png" alt="">
     </div>
