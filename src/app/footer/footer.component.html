@@ -1,15 +1,18 @@
 <footer>
     <div class="logo">
-        <img src="../../assets/img/logoDevWeis.png">
+        <img src="assets/img/logoDevWeis.png">
         <a class="imp" (click)="openImpressum()">Impressum</a>
     </div>
     <div class="copy">
         <p>© Alexej Hein 2023</p>
     </div>
     <div class="social">
-        <img src="../../assets/img/git.svg">
-        <img src="../../assets/img/linkin.svg">
-        <img src="../../assets/img/email.svg">
+      <img style="cursor: pointer;" (click)="goToLink($event, 'https://github.com/AlexejHein')" class="icon-header" src="assets/img/git.svg" alt="gitIcon">
+
+      <img style="cursor: pointer;" (click)="goToLink($event, 'https://www.linkedin.com/in/alexej-hein-a22744292/')" class="icon-header"  src="assets/img/linkin.svg" alt="linkInIcon">
+
+      <a href="#contact"><img class="icon-header"  src="assets/img/email.svg" alt="emailIcon"></a>
+
     </div>
 </footer>
 <app-impress *ngIf="showImpressum" (close)="closeImpressum()"></app-impress>

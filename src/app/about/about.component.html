@@ -1,5 +1,5 @@
-<div class="aboutContant" id="about">
-    <div class="aboutDecription">
+<div class="aboutContant" >
+    <div class="aboutDecription" [@slideIn]="animationState" *ngIf="true">
         <h2>Über mich</h2>
         <p>Ich bin ein angehender Front-End-Entwickler,
           der schon länger ein Interesse an Webentwicklung hegt.
@@ -11,7 +11,7 @@
           Benutzererfahrung zu vertiefen.
         </p>
         <div class="aboutInfo">
-            <img src="../../assets/img/lampe.svg">
+            <img src="assets/img/lampe.svg">
             <p>
               Neben der Webentwicklung habe ich auch ein tiefes Interesse an Webdesign,
               Grafikdesign und Illustrationen. Ich bin ständig bestrebt,
@@ -22,7 +22,7 @@
             </p>
         </div>
         <div class="aboutInfo">
-            <img src="../../assets/img/puzzel.svg">
+            <img src="assets/img/puzzel.svg">
             <p>
               In der Zukunft plane ich, meine Fähigkeiten und Kenntnisse weiter auszubauen,
               um ein Experte in der Front-End-Entwicklung zu werden. Mein Ziel ist es,
@@ -35,7 +35,7 @@
         </div>
     </div>
     <!-- <img class="abootImg" src="../../assets/img/shaps/Purple shadow 1.png" alt=""> -->
-    <div class="aboutImage">
+    <div  class="aboutImage">
         <div class="aboutImg">
         </div>
         <div class="aboutImgIcon"></div>

@@ -11,6 +11,11 @@ export class FooterComponent {
   openImpressum() {
     this.showImpressum = true;
   }
+
+  goToLink(event: Event, url: string): void {
+    event.preventDefault();
+    window.open(url, '_blank');
+  }
   closeImpressum() {
     this.showImpressum = false;
   }

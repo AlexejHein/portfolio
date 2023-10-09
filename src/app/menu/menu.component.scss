@@ -24,14 +24,12 @@ nav{
         margin-right: 80px;
         gap: 30px;
     }
-    // Für Bildschirme größer als 600px
 @media(min-width: 601px) {
     .mobilemenu {
       display: none;
     }
   }
 
-  // Für Bildschirme bis zu 600px
   @media(max-width: 600px) {
     .menu {
       display: none;

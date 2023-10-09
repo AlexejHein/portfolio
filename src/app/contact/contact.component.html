@@ -1,4 +1,4 @@
-<div class="contactContainer" id="contact">
+<div class="contactContainer">
     <div class="header">
         <div class="hr"></div>
         <h3>Kontakt</h3>
@@ -16,20 +16,20 @@
             </p>
         </div>
         <div class="item">
-            <form action="#">
-                <input type="text" placeholder="Name ">
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Nachricht"></textarea>
-                <div class="check">
-                    <input name="check" type="checkbox">
-                    <label for="check">Bitte akzeptieren Sie die Datenschutzrichtlinie und stimmen Sie der Verarbeitung meiner Daten wie dargelegt zu.</label>
-                </div>
-                <button>Senden</button>
-            </form>
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <input formControlName="name" type="text" placeholder="Name">
+            <input formControlName="email" type="text" placeholder="Email">
+            <textarea formControlName="message" placeholder="Nachricht"></textarea>
+            <div class="check">
+              <input formControlName="checkbox" name="check" type="checkbox">
+              <label for="check">Bitte akzeptieren Sie die Datenschutzrichtlinie und stimmen Sie der Verarbeitung meiner Daten wie dargelegt zu.</label>
+            </div>
+            <button type="submit" [disabled]="form.invalid">Senden</button>
+          </form>
         </div>
     </div>
-    <!-- <div class="footerShape">
+    <div class="footerShape">
         <img src="../../assets/img/shaps/Purple shadow footer V2.png" alt="">
-    </div> -->
+    </div>
 </div>
 

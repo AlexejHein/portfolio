@@ -10,6 +10,7 @@
         position: relative;
         img{
             position: absolute;
+          opacity: 0.2;
             top: -400px;
             left: -1300px;
             z-index: -1;
@@ -29,7 +30,7 @@
         h2{
             font-size: 5rem;
             font-weight: 700;
-            margin-right: 220px;
+            margin-right: 180px;
           @media (max-width: 1360px) {
             font-size: 4rem;
             margin-right: 150px;
