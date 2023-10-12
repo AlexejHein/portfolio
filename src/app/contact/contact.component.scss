@@ -36,8 +36,11 @@
             margin: 20px;
             @media (max-width: 768px){
                 width: 90%;
-              margin: 0 auto;
+                margin: 0 auto;
             }
+          div{
+            width: 100%;
+          }
             form{
                 width: 100%;
                 display: flex;
@@ -49,6 +52,7 @@
               }
                 input{
                     width: 100%;
+                    display: inline-block;
                     font-family: inherit;
                     margin-bottom: 10px;
                     color: #fff;
@@ -99,6 +103,9 @@
                       margin-bottom: 10px;
                     }
                 }
+              .rot{
+                color: red;
+              }
 
 
                 button{
@@ -111,10 +118,6 @@
                     font-family: inherit;
                     font-weight: bold;
                     cursor: pointer;
-                    &:hover{
-                        background-color: #000;
-                        color: #fff;
-                    }
                 }
             }
         }

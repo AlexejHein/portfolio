@@ -18,23 +18,23 @@
         <div class="item">
           <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div>
-              <input formControlName="name" type="text" placeholder="Name">
-              <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched" style="color: red">Bitte geben Sie einen gültigen Namen ein.</div>
+              <input class="inputName" formControlName="name" type="text" placeholder="Name">
+              <div class="rot" *ngIf="form.get('name')?.invalid && form.get('name')?.touched" >Bitte geben Sie einen gültigen Namen ein.</div>
             </div>
             <div>
               <input formControlName="email" type="text" placeholder="Email">
-              <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched" style="color: red">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+              <div class="rot" *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
             </div>
             <div>
               <textarea formControlName="message" placeholder="Nachricht"></textarea>
-              <div *ngIf="form.get('message')?.invalid && form.get('message')?.touched" style="color: red">Nachricht ist erforderlich.</div>
+              <div class="rot" *ngIf="form.get('message')?.invalid && form.get('message')?.touched">Nachricht ist erforderlich.</div>
             </div>
             <div class="check">
               <input formControlName="checkbox" name="check" type="checkbox">
               <label for="check">Bitte akzeptieren Sie die Datenschutzrichtlinie und stimmen Sie der Verarbeitung meiner Daten wie dargelegt zu.</label>
-              <div *ngIf="form.get('checkbox')?.invalid && form.get('checkbox')?.touched" style="color: red">Bitte akzeptieren Sie die Datenschutzrichtlinie.</div>
+              <div class="rot" *ngIf="form.get('checkbox')?.invalid && form.get('checkbox')?.touched">Bitte akzeptieren Sie die Datenschutzrichtlinie.</div>
             </div>
-            <button type="submit" [disabled]="form.invalid" [ngStyle]="{'background-color': form.get('checkbox')?.value ? 'green' : 'defaultColor' }">Senden</button>
+            <button type="submit" [disabled]="form.invalid" [ngStyle]="{'background-color': form.get('checkbox')?.value ? '#70E61C' : 'defaultColor' }">Senden</button>
           </form>
 
         </div>
