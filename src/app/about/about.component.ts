@@ -9,7 +9,7 @@ import {slideInAnimation} from "../animation";
   animations: [slideInAnimation]
 })
 export class AboutComponent {
-  animationState: string = 'void';
+  animationState: 'left' | 'right' | 'void' = 'void';
 
   constructor(private el: ElementRef) { }
 

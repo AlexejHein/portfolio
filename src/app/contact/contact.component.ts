@@ -11,14 +11,16 @@ import {slideInAnimation} from "../animation";
 export class ContactComponent {
   animationState: 'left' | 'right' | 'void' = 'void';
 
-  form = this.fb.group({
-    name: ['', [Validators.required , Validators.minLength(3)]],
-    email: ['', [Validators.required, Validators.email]],
-    message: ['', Validators.required],
-    checkbox: [false, Validators.requiredTrue]
-  });
+  form;
 
-  constructor(private fb: FormBuilder, private el: ElementRef) { }
+  constructor(private fb: FormBuilder, private el: ElementRef) {
+    this.form = this.fb.group({
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      checkbox: [false, Validators.requiredTrue]
+    });
+  }
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
