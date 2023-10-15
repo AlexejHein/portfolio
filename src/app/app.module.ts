@@ -10,10 +10,12 @@ import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MobilemenuComponent } from './mobilemenu/mobilemenu.component';
-import {NgOptimizedImage} from "@angular/common";
+import { NgOptimizedImage } from "@angular/common";
 import { ImpressComponent } from './impress/impress.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SkillsComponent,
     PortfolioComponent,
     MobilemenuComponent,
-    ImpressComponent
+    ImpressComponent,
+    PrivacyPolicyComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         NgOptimizedImage,
         ReactiveFormsModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -31,10 +31,12 @@
             </div>
             <div class="check">
               <input formControlName="checkbox" name="check" type="checkbox">
-              <label for="check">Bitte akzeptieren Sie die Datenschutzrichtlinie und stimmen Sie der Verarbeitung meiner Daten wie dargelegt zu.</label>
-              <div class="rot" *ngIf="form.get('checkbox')?.invalid && form.get('checkbox')?.touched">Bitte akzeptieren Sie die Datenschutzrichtlinie.</div>
+              <label for="check">Bitte akzeptieren Sie die <a class="btnPP" (click)="openPrivacyPolicy()">Datenschutzrichtlinie</a> und stimmen Sie der Verarbeitung meiner Daten wie dargelegt zu.</label>
             </div>
-            <button type="submit" [disabled]="form.invalid" [ngStyle]="{'background-color': form.get('checkbox')?.value ? '#70E61C' : 'defaultColor' }">Senden</button>
+            <div class="rot" *ngIf="form.get('checkbox')?.invalid && form.get('checkbox')?.touched">Bitte akzeptieren Sie die Datenschutzrichtlinie.</div>
+
+            <button type="submit" [disabled]="form.invalid" [ngStyle]="{'background-color': submitted ? '#B6B6B6' : (form.get('checkbox')?.value ? '#70E61C' : '#B6B6B6' ) }"
+            >Senden</button>
           </form>
 
         </div>
@@ -44,4 +46,6 @@
     </div>
     -->
 </div>
+<app-privacy-policy *ngIf="showPrivacyPolicy" (close)="closePrivacyPolicy()"></app-privacy-policy>
+
 
