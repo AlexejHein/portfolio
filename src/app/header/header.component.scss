@@ -118,6 +118,9 @@
   @media (max-width: 768px){
     margin-top: 40px;
   }
+  a{
+    display: flex;
+  }
     .headerFooter{
         display: flex;
         flex-direction: row;
