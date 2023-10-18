@@ -65,10 +65,6 @@ export class ContactComponent {
     );
   }
 
-
-
-
-
   onSubmit() {
     if (this.form.valid) {
       console.log('Form is valid, send email');
@@ -80,7 +76,6 @@ export class ContactComponent {
       this.submitted = false;
     }, 500);
   }
-
 
   openPrivacyPolicy() {
     this.showPrivacyPolicy = true;
