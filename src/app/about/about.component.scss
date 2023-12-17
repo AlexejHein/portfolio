@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (min-width: 1700px){
+      justify-content: center;
+    }
     .aboutDecription{
         width: 40%;
         margin: 100px;
@@ -56,6 +59,8 @@
             width: 170px;
             height: 3px;
             background-color: #70E61C;
-        }
+          @media (min-width: 1700px) {
+              display: none;
+        }        }
     }
 }

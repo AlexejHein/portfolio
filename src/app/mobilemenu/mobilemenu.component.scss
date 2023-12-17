@@ -1,6 +1,4 @@
 .menu-container {
-    width: 40px;
-    height: 40px;
     border: 2px solid #fff;
     border-radius: 5px;
     margin-right: 60px;
@@ -13,8 +11,8 @@
     .hamburger-icon {
         cursor: pointer;
         position: relative;
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 25px;
 
         span {
             background: #fff;
@@ -68,7 +66,7 @@
 
     &.open .hamburger-icon {
         span:nth-child(1) {
-            transform: translateY(14px) rotate(45deg) !important;
+            transform: translateY(9px) rotate(45deg) !important;
         }
 
         span:nth-child(2) {
@@ -76,7 +74,7 @@
         }
 
         span:nth-child(3) {
-            transform: translateY(-14px) rotate(-45deg) !important;
+            transform: translateY(-9px) rotate(-45deg) !important;
         }
     }
 }
