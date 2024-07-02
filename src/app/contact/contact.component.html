@@ -14,19 +14,39 @@
               Brauchen Sie einen Frontend-Entwickler? <strong> Kontaktieren Sie mich!</strong>
             </p>
         </div>
-        <div class="item">
-            <form action="#">
-                <input type="text" placeholder="Name ">
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Nachricht"></textarea>
-                <div class="check">
-                    <input name="check" type="checkbox">
-                    <label for="check">Bitte akzeptieren Sie die <a href="/privacy-policy">Datenschutzrichtlinie</a>Datenschutzrichtlinie
-                      und stimmen Sie der Verarbeitung meiner Daten wie dargelegt zu.</label>
-                </div>
-                <button>Sand massege :)</button>
-            </form>
-        </div>
+      <div class="item">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <input type="text" placeholder="Name" formControlName="name">
+          <div class="error-container">
+          <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error">
+            Bitte geben Sie Ihren Namen ein.
+          </div>
+          </div>
+          <input type="text" placeholder="Email" formControlName="email">
+          <div class="error-container">
+          <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error">
+            Bitte geben Sie eine gültige E-Mail-Adresse ein.
+          </div>
+          </div>
+          <textarea placeholder="Nachricht" formControlName="message"></textarea>
+          <div class="error-container">
+          <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="error">
+            Bitte geben Sie eine Nachricht ein.
+          </div>
+          </div>
+          <div class="check">
+            <input class="checkbox" name="check" type="checkbox" formControlName="check">
+            <label for="check">Bitte akzeptieren Sie die <a class="datenschutz" href="/privacy-policy">Datenschutzrichtlinie</a>Datenschutzrichtlinie
+              und stimmen Sie der Verarbeitung meiner Daten wie dargelegt zu.</label>
+          </div>
+          <div class="error-container">
+          <div *ngIf="contactForm.get('check')?.invalid && contactForm.get('check')?.touched" class="error">
+            Sie müssen die Datenschutzrichtlinie akzeptieren, um fortzufahren.
+          </div>
+          </div>
+          <button class="sendbtn" [disabled]="contactForm.invalid">Sand massage :)</button>
+        </form>
+      </div>
     </div>
 </div>
 
