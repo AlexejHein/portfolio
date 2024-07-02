@@ -2,8 +2,8 @@
     {
       "title": "Join",
       "technologies": "JavaScript | HTML | CSS",
-      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
-      "imageUrl": "../../assets/img/join.png",
+      "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu.",
+      "imageUrl": "../../assets/img/Join.png",
       "links": [
         { "url": "https://alexej-hein.developerakademie.net/join/index.html", "label": "Live test" },
         { "url": "https://github.com/AlexejHein/join", "label": "Github", "class": "gitbtn" }
@@ -20,14 +20,32 @@
       ]
     },
     {
-      "title": "Weather App",
-      "technologies": "JavaScript | HTML | CSS",
-      "description": "Weather app based on OpenWeatherMap API...",
-      "imageUrl": "../../assets/img/join.png",
+      "title": "DaBubble",
+      "technologies": "Angular | Firebase ",
+      "description": "Weather app using the OpenWeatherMap API. Search for a city and get the current weather and forecast.",
+      "imageUrl": "../../assets/img/DaBubble.png",
       "links": [
-        { "url": "", "label": "Live test" },
-        { "url": "", "label": "Github", "class": "gitbtn" }
+        { "url": "https://alexej-hein.de/DaBubble", "label": "Live test" },
+        { "url": "https://github.com/AlexejHein/DABubble", "label": "Github", "class": "gitbtn" }
       ]
+    },
+    {
+      "title": "Simple CRM",
+      "technologies": "Angular | Firebase | Matieral Design",
+      "description": "Eine einfache CRM-App, mit der man Leads anlegen und verwalten sowie Aufgaben erstellen kann.",
+      "imageUrl": "../../assets/img/CRM.png",
+      "links": [
+        { "url": "https://alexej-hein.de/crm/", "label": "Live test" },
+        { "url": "https://github.com/AlexejHein/crm/tree/main/CRM", "label": "Github", "class": "gitbtn" }
+      ]
+    },
+    {
+      "title": "Foto Gallery",
+      "technologies": "Bootstrap | JavaScript | HTML | CSS | PHP",
+      "description": "Diese Foto-Webseite nutzt Bootstrap, HTML, CSS und PHP, um eine ansprechende und benutzerfreundliche Plattform für die Präsentation von Fotografien zu schaffen. Durch das responsive Design können Nutzer einfach durch Galerien browsen und mit den Inhalten interagieren, während PHP dynamische Webseitenfunktionen ermöglicht.",
+      "imageUrl": "../../assets/img/FotoSeite.png",
+      "links": [
+        { "url": "https://naturfotodesign.de/index.html", "label": "Live test" }
+        ]
     }
   ]
-  
