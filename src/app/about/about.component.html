@@ -1,5 +1,5 @@
 <div class="aboutContant" id="about">
-    <div class="aboutDecription">
+    <div [@slideInLeft]="showAnimation ? '*' : 'void'"  class="aboutDecription">
         <h2>Über MIch</h2>
         <p>Ich bin ein aufstrebender Front-End-Entwickler mit langjährigem
           Interesse an Webentwicklung. Mein Ziel ist es,
@@ -27,7 +27,7 @@
               Entwicklern und Designern kreative Webprojekte zu realisieren.</p>
         </div>
     </div>
-    <div class="aboutImage">
+    <div [@slideInRight]="showAnimation ? '*' : 'void'"  class="aboutImage">
         <div class="aboutImg">
         </div>
         <div class="aboutImgIcon"></div>

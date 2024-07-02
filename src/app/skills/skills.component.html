@@ -1,11 +1,11 @@
 <div class="skillsContainer" >
-  <div class="skills" id="skills">
+  <div [@slideInLeft]="showAnimation ? '*' : 'void'" class="skills" id="skills">
       <div class="iconSkills" *ngFor="let icon of icons; let i = index">
           <img [src]="icon" alt="Icon" width="50" height="50">
           <p class="deskIcon">{{ deskription[i] }}</p>
       </div>
   </div>
-  <div class="skillsDescription">
+  <div [@slideInRight]="showAnimation ? '*' : 'void'" class="skillsDescription">
       <h2>Meine Skills</h2>
       <p>Ich habe Erfahrung in der Entwicklung von Projekten mit
         verschiedenen Frontend-Technologien und -Konzepten gesammelt.</p>
