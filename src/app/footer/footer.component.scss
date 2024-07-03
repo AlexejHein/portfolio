@@ -11,7 +11,7 @@ footer{
     a{
         color: #fff;
         text-decoration: none;
-        
+
     }
     span{
         color: #70E61C;
@@ -40,4 +40,13 @@ footer{
             bottom: 20px;
         }
     }
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 50px;
+  }
 }
