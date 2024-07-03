@@ -46,7 +46,7 @@
         top: 100%;
         background-color: #141D2FCC;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        display: none; // Versteckt standardmäßig das Menü
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -62,7 +62,7 @@
     }
 
     &.open .menu {
-        display: flex !important; // Zeigt das Menü an, wenn die Klasse .open hinzugefügt wird
+        display: flex !important;
     }
 
     &.open .hamburger-icon {
