@@ -11,11 +11,12 @@ nav{
     padding: 10px;
     z-index: 1000;
     .logo{
-        font-size: 30px;
-        font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
         img{
           width: 50px;
-          padding-left: 20px;
         }
     }
     span{
@@ -26,14 +27,11 @@ nav{
         margin-right: 30px;
         gap: 30px;
     }
-    // Für Bildschirme größer als 600px
 @media(min-width: 601px) {
     .mobilemenu {
       display: none;
     }
   }
-
-  // Für Bildschirme bis zu 600px
   @media(max-width: 600px) {
     .menu {
       display: none;
