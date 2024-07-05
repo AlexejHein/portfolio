@@ -18,6 +18,7 @@
         @media (max-width: 1268px){
             width: 80%;
             justify-content: center;
+            gap: 40px;
         }
         img{
             transition: all 0.4s ease-in-out;
@@ -46,8 +47,9 @@
             font-weight: 600;
         }
         @media (max-width: 1368px){
+          width: 100%;
             h2{
-                font-size: 3rem;
+                font-size: 2rem;
             }
             p{
                 padding: 10px;
