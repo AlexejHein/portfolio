@@ -16,10 +16,8 @@ export class ContactComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
-      // Hier können Sie den Code hinzufügen, um das Formular abzusenden
       console.log(this.contactForm.value);
     } else {
-      // Wenn das Formular ungültig ist, markieren Sie alle Felder als "berührt", um die Validierungsfehler anzuzeigen
       this.contactForm.markAllAsTouched();
     }
   }

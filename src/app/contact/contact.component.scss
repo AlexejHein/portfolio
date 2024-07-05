@@ -1,17 +1,27 @@
 .contactContainer{
+    padding: 20px;
     .header{
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
+      @media (max-width: 1000px){
+        justify-content: center;
+      }
     }
     .hr{
         width: 100px;
         height: 3px;
         background-color: #9747FF;
+      @media (max-width: 1000px){
+        display: none;
+      }
     }
     h3{
-        font-size: 3rem;
+        font-size: 5rem;
+        @media (max-width: 1000px) {
+         font-size: 2rem;
+        }
     }
     .contant{
         width: 100%;
@@ -32,7 +42,7 @@
             margin: 20px;
             @media (max-width: 768px){
                 width: 90%;
-              margin: 0 auto;
+                margin: 0 auto;
             }
             form{
                 width: 100%;
