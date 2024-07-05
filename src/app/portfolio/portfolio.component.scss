@@ -6,6 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    p{
+      padding: 20px;
+    }
     .imgShape{
         position: relative;
         img{
@@ -26,22 +29,51 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+        @media (max-width: 768px) {
+          justify-content: center;
+        }
         h2{
             font-size: 5rem;
             font-weight: 700;
             margin-right: 220px;
+          @media (max-width: 1000px) {
+            font-size: 2rem;
+            margin-right: 50px;
+          }
+          @media (max-width: 480px) {
+            text-align: center;
+            margin-right: 0;
+          }
         }
         .hr{
             width: 100px;
             height: 3px;
             background-color: #9747FF;
             margin-right: 50px;
+            @media (max-width: 1000px) {
+                width: 50px;
+            }
+          @media (max-width: 768px) {
+            width: 50px;
+          }
+          @media (max-width: 480px) {
+            display: none;
+          }
         }
         .hrLong{
             width: 500px;
             height: 3px;
             background-color: #9747FF;
             margin-right: 0;
+            @media (max-width: 1000px) {
+                width: 300px;
+            }
+            @media (max-width: 768px) {
+              width: 100px;
+            }
+            @media (max-width: 480px) {
+              display: none;
+            }
         }
     }
 }
@@ -51,7 +83,7 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    &:nth-child(2n) { 
+    &:nth-child(2n) {
         text-align: right;
     }
     @media (max-width: 768px) {
@@ -59,13 +91,13 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        &:nth-child(2n) { 
-            flex-direction: column-reverse; 
+        &:nth-child(2n) {
+            flex-direction: column-reverse;
             text-align: center;
         }
         img{
-            width: 400px; 
-            height: auto; 
+            width: 400px;
+            height: auto;
             background-color: transparent;
             border: none;
             margin-bottom: -70px;
@@ -76,7 +108,7 @@
             }
         }
     }
-    
+
     h3{
         color: #9747FF;
     }
