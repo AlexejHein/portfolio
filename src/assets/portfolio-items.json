@@ -1,5 +1,15 @@
 [
     {
+      "title": "DaBubble",
+      "technologies": "Angular | Firebase ",
+      "description": "DaBubble ist eine soziale Plattform, die es Benutzern ermöglicht, sich mit anderen zu vernetzen und ihre Gedanken und Ideen in Form von Blasen zu teilen. Die Anwendung bietet eine Vielzahl von Funktionen, darunter das Erstellen von Blasen, das Kommentieren von Beiträgen und das Liken von Inhalten. DaBubble wurde mit Angular und Firebase entwickelt und bietet eine benutzerfreundliche Oberfläche, die es Nutzern ermöglicht, sich einfach zu registrieren und zu interagieren.",
+      "imageUrl": "../../assets/img/DaBubble.png",
+      "links": [
+        { "url": "https://alexej-hein.de/DaBubble", "label": "Live test" },
+        { "url": "https://github.com/AlexejHein/DABubble", "label": "Github", "class": "gitbtn" }
+      ]
+    },
+    {
       "title": "Join",
       "technologies": "JavaScript | HTML | CSS",
       "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu.",
@@ -17,16 +27,6 @@
       "links": [
         { "url": "https://alexej-hein.developerakademie.net/ElPolloLoco", "label": "Live test" },
         { "url": "https://github.com/AlexejHein/ElPolloLoco", "label": "Github", "class": "gitbtn" }
-      ]
-    },
-    {
-      "title": "DaBubble",
-      "technologies": "Angular | Firebase ",
-      "description": "Weather app using the OpenWeatherMap API. Search for a city and get the current weather and forecast.",
-      "imageUrl": "../../assets/img/DaBubble.png",
-      "links": [
-        { "url": "https://alexej-hein.de/DaBubble", "label": "Live test" },
-        { "url": "https://github.com/AlexejHein/DABubble", "label": "Github", "class": "gitbtn" }
       ]
     },
     {
